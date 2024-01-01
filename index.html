@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your New Website</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="w3-serif w3-bold w3-sand w3-text-dark-grey w3-mobile w3-cursive">
+    <!-- Navigation and main heading -->
+    <header class="header w3-text-white w3-purple w3-padding-16 w3-margin w3-round-xxlarge w3-card-4 w3 mobile">
+        <nav class="navbar">
+            <!-- TESTING RESPONSIVE NAV HERE -->
+            <div class="w3-bar w3-bl">
+                <a href="#events" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-pink w3-mobile">Events</a>
+                <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-blue w3-mobile">Pricing</a>
+                <a href="#gallery" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-teal w3-mobile">Gallery</a>
+                <a href="#contact-article" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-orange w3-mobile">Contact</a>
+                <span class="w3-bar-item w3-right">Developing little minds, little bodies and little voices for life's big adventure!</span>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-middle w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+              </div>
+              
+              <div id="navigation" class="w3-bar-block w3-bl w3-hide w3-hide-large w3-hide-medium">
+                <a href="#events" class="w3-bar-item w3-button">Events</a>
+                <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
+                <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+                <a href="#contact-article" class="w3-bar-item w3-button">Contact</a>
+              </div>
+            <!-- TESTING RESPONSIVE NAV ABOVE HERE -->
+            <!-- <div class="w3-bar w3-bl">
+                <b>
+               
+                <a href="#events" class="w3-bar-item w3-button w3-hover-none w3-hover-text-pink w3-mobile">Events</a>
+                <a href="#pricing" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue w3-mobile">Pricing</a>
+                <a href="#gallery" class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal w3-mobile">Gallery</a>
+                <a href="#contact-article" class="w3-bar-item w3-button w3-hover-none w3-hover-text-orange w3-mobile">Contact</a>
+                <span class="w3-bar-item w3-right w3-mobile">Developing little minds, little bodies and little voices for life's big adventure!</span>
+                </b>
+              </div> -->
+        </nav>
+    </header>
+<!-- First main text area for home page information -->
+<section class="home-section w3-padding w3-mobile">
+    <main class="main-article w3-blue w3-padding-16 w3-round-xxlarge w3-card-4">
+        <div id="main-card" class="w3-padding">
+            <h1><b>Fun Foundations</b></h1>
+            <p>We offer exciting and interactive weekly sessions based in Bromsgrove for young children and their families.</p>
+            <p>Your child will develop skills in key areas such as: 
+              Language and communication, fine motor skills & control, problem solving & perseverance, balance & coordination, cooperation & taking turns, and listening & attention.</p>
+        </div>
+    </main>
+</section>
+
+<!-- Split mid section text areas for event and gallery information
+further splits within each section occur for pricing, open/closed session and individual thumbnails in gallery -->
+<section class="split-class w3-container w3-padding w3-cell-row w3-mobile">
+<div class="subs w3-row">
+    <section class="sub-article-1 w3-col w3-l5 w3-m3 w3-s2 w3-pink w3-round-xxlarge w3-card-2 w3-left w3-padding-16" style="width: 49%">
+        <div id="events"></div>
+            <h6><b>What's going on?</b></h6>
+            <div class="w3-container w3-display-container w3-margin-top">
+               
+                <div class="event-dates w3-left w3-half w3-col w3-l6 w3-m2 w3-s2 w3-amber w3-round-xlarge w3-card-2 w3-mobile" style="width: 49%">
+                
+                    <p>Mondays:</p>
+                    <p>December 11th - Open</p>
+                    <p>December 18th - Open</p>
+                    <p>December 25th - Closed</p>
+                    <p>January 1st - Closed</p>
+                    <p>January 8th - Open</p>
+            
+                    </p>
+                </div>
+                    
+                <div class="event-dates w3-row w3-right w3-half w3-col w3-l6 w3-m2 w3-amber w3-round-xlarge w3-card-2 w3-mobile" style="width: 49%">
+               
+                    <p>Tuesdays:</p>
+                    <p>December 12th - Open</p>
+                    <p>December 19th - Open</p>
+                    <p>December 26th - Closed</p>
+                    <p>January 2nd - Closed</p>
+                    <p>January 9th - Open</p>
+                
+                    </p>
+                </div>
+            </div>
+           
+            <div class="w3-container w3-display-container w3-margin">
+            <div id="pricing" class="pricing w3-row w3- w3-col w3-l5 w3-m2 w3-s10 w3-blue w3-round-xlarge w3-card-2 w3-mobile" style="width: 100%">
+               
+                    <p>Pricing:</p>
+                    <p>Block booking = £56 (7 weeks)</p>
+                    <p>Pay as you go = £8</p>
+                
+                    
+            </div>
+            </div>
+        
+        
+    </section>
+
+                <!-- Images for Gallery section - Code replicated for each image -->
+    <section class="sub-article-2 w3-col w3-l5 w3-m3 w3-s2 w3-teal w3-round-xxlarge w3-card-2 w3-right w3-padding-16 w3-mobile" style="width: 49%">
+        <div id="gallery"></div>
+            <h6><b>Let's go on an adventure!</b></h6>
+            <div class="w3-container w3-margin-bottom">
+<!-- Row 1 for images -->
+                <!-- Image 1 -->
+                <div class="w3-row-padding">
+                    <div class="w3-third">
+                      <div class="w3-card-4">
+                        <!-- Trigger the Modal -->
+                        <img id="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg" style="width:100%;max-width:300px">
+                        <div id="myModal" class="modal"> <!-- The Modal -->
+                        <span class="close">&times;</span><!-- The Close Button -->
+  <!-- Modal Content (The Image) -->
+                          <img class="modal-content" id="imgThumb">
+  <!-- Modal Caption (Image Text) -->
+                          <div id="caption"></div>
+                      </div>
+                        <div class="w3-container">
+                          <h5>5 Terre</h5>
+                        </div>
+                      </div>
+                    </div>   
+                    <!-- Image 2 -->
+                
+                    <div class="w3-third">
+                      <div class="w3-card-4">
+                        <img id="thumbnail2" src="./assets/images/stock-image-2-children-playing-fun-foundations-website.jpg" style="width:100%">
+                        <div class="w3-container">
+                          <h5>5 Terre</h5>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Image 3 -->
+                
+                    <div class="w3-third">
+                      <div class="w3-card-4">
+                        <img id="thumbnail3" src="./assets/images/stock-image-3-children-playing-fun-foundations-website.jpg" style="width:100%" class = "w3-hover-opacity">
+                        <div class="w3-container">
+                          <h5>5 Terre</h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+<!-- Row two for images -->
+                    <!-- Image 4 -->
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-third">
+                      <div class="w3-card-4">
+                        <img src="./assets/images/preview16.jpg" style="width:100%" class = "w3-hover-opacity">
+                        <div class="w3-container">
+                          <h5>5 Terre</h5>
+                        </div>
+                      </div>
+                    </div>
+                   
+                      <!-- Image 5 -->
+                
+                    <div class="w3-third">
+                      <div class="w3-card-4">
+                        <img src="./assets/images/preview16.jpg" style="width:100%" class = "w3-hover-opacity">
+                        <div class="w3-container">
+                          <h5>5 Terre</h5>
+                        </div>
+                      </div>
+                    </div> 
+                
+                    <!-- Image 6 -->
+                
+                    <div class="w3-third">
+                      <div class="w3-card-4">
+                        <img src="./assets/images/preview16.jpg" style="width:100%" class = "w3-hover-opacity">
+                        <div class="w3-container">
+                          <h5>5 Terre</h5>
+                        </div>
+                      </div>
+                    </div> 
+                </div>              
+                
+            </div>
+           
+        </div>
+    </section>
+</div>
+</section>
+
+<!-- contact information section at bottom of home screen -->
+<section class="contact-article w3-container w3-padding"> 
+    <a id="contact-article"></a>
+    <section class="sub-article-3 w3-orange w3-text-indigo w3-round-xxlarge w3-card-2 w3-cell-row w3-padding-16">
+        <div>
+            <h6><b>Contact Me!</b></h6>
+            <p>Telephone: 07866 625164</p>
+            <p><a href="https://www.facebook.com/FunFoundations/" class="w3-hover-none w3-hover-text-blue">Facebook</a></p>
+            <p>
+                <button onclick="document.getElementById('id01').style.display='block'"
+                class="w3-button w3-hover-none w3-hover-text-blue"><u>Send me an email!</u></button>
+                
+                <!-- The Modal -->
+                <div id="id01" class="w3-modal">
+                  <div class="w3-modal-content">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                      <p>Some text in the Modal..</p>
+                      <p>Some text in the Modal..</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="w3-modal-content w3-card-4"></div>Send and Email -->
+            </p>
+        </div>
+    </section>
+</section>
+
+<script src="./assets/script/script.js"></script>
+</body>
+
+<!-- <footer>
+
+</footer> -->
+
+<script>
+
+</script>
+
+</html>
