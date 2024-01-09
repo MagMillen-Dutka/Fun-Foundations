@@ -1,175 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./assets/css/gallery.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./assets/css/gallery.css">
 </head>
 
 
 <body class="w3-serif w3-bold w3-sand w3-text-dark-grey w3-mobile w3-cursive">
-    <header class="header w3-text-white w3-purple w3-padding-16 w3-margin w3-round-xxlarge w3-card-4 w3 mobile">
-        <nav class="navbar">
-            <!-- TESTING RESPONSIVE NAV HERE -->
-            <div class="w3-bar w3-bl">
-                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-pink w3-mobile">Home</a>
-                <a href="#gallery" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-teal w3-mobile">Gallery</a>
-                <a href="#contact-article" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-orange w3-mobile">Contact</a>
-                <span class="w3-bar-item w3-right">Developing little minds, little bodies and little voices for life's big adventure!</span>
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-middle w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  <header class="header w3-text-white w3-purple w3-padding-16 w3-margin w3-round-xxlarge w3-card-4 w3 mobile">
+    <nav class="navbar">
+      <!-- TESTING RESPONSIVE NAV HERE -->
+      <div class="w3-bar w3-bl">
+        <a href="index.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-pink w3-mobile">Home</a>
+        <a href="#gallery"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-teal w3-mobile">Gallery</a>
+        <a href="#contact-article"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-orange w3-mobile">Contact</a>
+        <span class="w3-bar-item w3-right">Developing little minds, little bodies and little voices for life's big
+          adventure!</span>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-middle w3-hide-large w3-hide-medium"
+          onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <div id="navigation" class="w3-bar-block w3-bl w3-hide w3-hide-large w3-hide-medium">
+        <a href="#events" class="w3-bar-item w3-button">Events</a>
+        <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
+        <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+        <a href="#contact-article" class="w3-bar-item w3-button">Contact</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Images for Gallery section - Code replicated for each image -->
+  <section
+    class="gallery w3-col w3-l5 w3-m3 w3-s2 w3-teal w3-round-xxlarge w3-card-2 w3-right w3-padding-16 w3-mobile w3-center">
+    <div id="gallery"></div>
+    <h6><b>Let's go on an adventure!</b></h6>
+    <div class="w3-container w3-margin-bottom">
+
+      <!-- Row 1 for images -->
+      <!-- Note: The images in this sequence are individually added through the code below. Class / ID / containers should remain the same for each image. The only thing that should change is the image src.  -->
+
+      <div class="w3-row-padding image-grid">
+        <!-- Image 1 -->
+        <div class="w3-third">
+          <div class="w3-card-4 image-container">
+            <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content"
+                src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+              <!-- text inside the modal -->
+              <div class="w3-container">
+                <h5>Motor Skills</h5>
               </div>
-              
-              <div id="navigation" class="w3-bar-block w3-bl w3-hide w3-hide-large w3-hide-medium">
-                <a href="#events" class="w3-bar-item w3-button">Events</a>
-                <a href="#pricing" class="w3-bar-item w3-button">Pricing</a>
-                <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
-                <a href="#contact-article" class="w3-bar-item w3-button">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="w3-third">
+          <div class="w3-card-4 image-container">
+            <img class="myImg" src="./assets/images/stock-image-2-children-playing-fun-foundations-website.jpg">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content"
+                src="./assets/images/stock-image-2-children-playing-fun-foundations-website.jpg">
+              <div class="w3-container">
+                <h5>Motor Skills</h5>
               </div>
-           
-        </nav>
-    </header>
+            </div>
+          </div>
+        </div>
 
-<!-- Images for Gallery section - Code replicated for each image -->
-<section class="gallery w3-col w3-l5 w3-m3 w3-s2 w3-teal w3-round-xxlarge w3-card-2 w3-right w3-padding-16 w3-mobile w3-center">
-  <div id="gallery"></div>
-      <h6><b>Let's go on an adventure!</b></h6>
-  <div class="w3-container w3-margin-bottom">
+        <!-- Image 3 -->
+        <div class="w3-third">
+          <div class="w3-card-4 image-container">
+            <img class="myImg" src="./assets/images/stock-image-3-children-playing-fun-foundations-website.jpg">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content"
+                src="./assets/images/stock-image-3-children-playing-fun-foundations-website.jpg">
+              <div class="w3-container">
+                <h5>Motor Skills</h5>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Row 1 for images -->
-<!-- Note: The images in this sequence are individually added through the code below. Class / ID / containers should remain the same for each image. The only thing that should change is the image src.  -->
+      </div>
 
-<div class="w3-row-padding image-grid">
-  <!-- Image 1 -->
-  <div class="w3-third">
-    <div class="w3-card-4 image-container">
-      <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-      <div class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-<!-- text inside the modal -->
-        <div class="w3-container">
-          <h5>Motor Skills</h5>
+      <!-- Row two for images -->
+      <div class="w3-row-padding image-grid">
+
+        <!-- Image 4 -->
+        <div class="w3-third">
+          <div class="w3-card-4 image-container">
+            <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content"
+                src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+              <div class="w3-container">
+                <h5>Motor Skills</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Image 5 -->
+        <div class="w3-third">
+          <div class="w3-card-4 image-container">
+            <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content"
+                src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+              <div class="w3-container">
+                <h5>Motor Skills</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="w3-third">
+          <div class="w3-card-4 image-container">
+            <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+            <div class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content"
+                src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
+              <div class="w3-container">
+                <h5>Motor Skills</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End closing tags for gallery section. -->
+        <!-- Closure for image row 2 padding -->
+      </div>
+      <!-- Closure for gallery 'image-grid' div -->
+    </div>
+    <!-- Closure for 'sub-article-2' section -->
+  </section>
+
+
+
+
+  <!-- contact information section at bottom of home screen -->
+  <a id="contact-article"></a>
+  <section class="sub-article-3 w3-orange w3-text-indigo w3-round-xxlarge w3-card-2 w3-cell-row w3-padding-16 w3-center"
+    style="width:97%">
+    <div>
+      <h6><b>Contact Me!</b></h6>
+      <p>Telephone: 07866 625164</p>
+      <p><a href="https://www.facebook.com/FunFoundations/" class="w3-hover-none w3-hover-text-blue">Facebook</a></p>
+      <p>
+        <button onclick="document.getElementById('id01').style.display='block'"
+          class="w3-button w3-hover-none w3-hover-text-blue"><u>Send me an email!</u></button>
+
+        <!-- The Modal -->
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <p>Some text in the Modal..</p>
+            <p>Some text in the Modal..</p>
+          </div>
         </div>
       </div>
+      <!-- <div class="w3-modal-content w3-card-4"></div>Send and Email -->
+      </p>
     </div>
-  </div>
+  </section>
+  </section>
 
-<!-- Image 2 -->
-<div class="w3-third">
-  <div class="w3-card-4 image-container">
-    <img class="myImg" src="./assets/images/stock-image-2-children-playing-fun-foundations-website.jpg">
-    <div class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" src="./assets/images/stock-image-2-children-playing-fun-foundations-website.jpg">
-      <div class="w3-container">
-        <h5>Motor Skills</h5>
-      </div>
-    </div>
-  </div>
-</div>
+  <script src="./assets/script/gallery.js"></script>
 
-<!-- Image 3 -->
-<div class="w3-third">
-  <div class="w3-card-4 image-container">
-    <img class="myImg" src="./assets/images/stock-image-3-children-playing-fun-foundations-website.jpg">
-    <div class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" src="./assets/images/stock-image-3-children-playing-fun-foundations-website.jpg">
-      <div class="w3-container">
-        <h5>Motor Skills</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<!-- Row two for images -->
-<div class="w3-row-padding image-grid">
-
-  <!-- Image 4 -->
-  <div class="w3-third">
-    <div class="w3-card-4 image-container">
-      <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-      <div class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-        <div class="w3-container">
-          <h5>Motor Skills</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Image 5 -->
-<div class="w3-third">
-  <div class="w3-card-4 image-container">
-    <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-    <div class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-      <div class="w3-container">
-        <h5>Motor Skills</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Image 6 -->
-<div class="w3-third">
-  <div class="w3-card-4 image-container">
-    <img class="myImg" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-    <div class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" src="./assets/images/stock-image-1-children-playing-fun-foundations-website.jpeg">
-      <div class="w3-container">
-        <h5>Motor Skills</h5>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- End closing tags for gallery section. -->
-<!-- Closure for image row 2 padding -->
-</div>
-<!-- Closure for gallery 'image-grid' div -->
-</div>
-<!-- Closure for 'sub-article-2' section -->
-</section>
-
-
-
-
-        <!-- contact information section at bottom of home screen -->
-    <a id="contact-article"></a>
-    <section class="sub-article-3 w3-orange w3-text-indigo w3-round-xxlarge w3-card-2 w3-cell-row w3-padding-16 w3-center" style="width:97%">
-        <div>
-            <h6><b>Contact Me!</b></h6>
-            <p>Telephone: 07866 625164</p>
-            <p><a href="https://www.facebook.com/FunFoundations/" class="w3-hover-none w3-hover-text-blue">Facebook</a></p>
-            <p>
-                <button onclick="document.getElementById('id01').style.display='block'"
-                class="w3-button w3-hover-none w3-hover-text-blue"><u>Send me an email!</u></button>
-                
-                <!-- The Modal -->
-                <div id="id01" class="w3-modal">
-                  <div class="w3-modal-content">
-                    <div class="w3-container">
-                      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                      <p>Some text in the Modal..</p>
-                      <p>Some text in the Modal..</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="w3-modal-content w3-card-4"></div>Send and Email -->
-            </p>
-        </div>
-    </section>
-</section>
-
-    <script src="./assets/script/gallery.js"></script>
-    
 </body>
+
 </html>
