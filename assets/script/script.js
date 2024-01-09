@@ -1,30 +1,29 @@
 function myFunction() {
-    var x = document.getElementById("navigation");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
+  var x = document.getElementById("navigation");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
   }
-
-  
-  // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("imgThumb");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// JavaScript for modal functionality
+const images = document.querySelectorAll('.myImg');
+const modals = document.querySelectorAll('.modal');
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+images.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    modals[index].style.display = 'block';
+  });
+
+  const closeModal = modals[index].querySelector('.close');
+  closeModal.addEventListener('click', () => {
+    modals[index].style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modals[index]) {
+      modals[index].style.display = 'none';
+    }
+  });
+});

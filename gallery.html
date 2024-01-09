@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Your New Website</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="./assets/css/gallery.css">
 </head>
 
+
 <body class="w3-serif w3-bold w3-sand w3-text-dark-grey w3-mobile w3-cursive">
-    <!-- Navigation and main heading -->
     <header class="header w3-text-white w3-purple w3-padding-16 w3-margin w3-round-xxlarge w3-card-4 w3 mobile">
         <nav class="navbar">
             <!-- TESTING RESPONSIVE NAV HERE -->
             <div class="w3-bar w3-bl">
-                <a href="#events" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-pink w3-mobile">Events</a>
-                <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-blue w3-mobile">Pricing</a>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-pink w3-mobile">Home</a>
                 <a href="#gallery" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-teal w3-mobile">Gallery</a>
                 <a href="#contact-article" class="w3-bar-item w3-button w3-hide-small w3-hover-none w3-hover-text-orange w3-mobile">Contact</a>
                 <span class="w3-bar-item w3-right">Developing little minds, little bodies and little voices for life's big adventure!</span>
@@ -31,71 +29,12 @@
            
         </nav>
     </header>
-<!-- First main text area for home page information -->
-<section class="home-section w3-padding w3-mobile">
-    <main class="main-article w3-blue w3-padding-16 w3-round-xxlarge w3-card-4">
-        <div id="main-card" class="w3-padding">
-            <h1><b>Fun Foundations</b></h1>
-            <p>We offer exciting and interactive weekly sessions based in Bromsgrove for young children and their families.</p>
-            <p>Your child will develop skills in key areas such as: 
-              Language and communication, fine motor skills & control, problem solving & perseverance, balance & coordination, cooperation & taking turns, and listening & attention.</p>
-        </div>
-    </main>
-</section>
-
-<!-- Split mid section text areas for event and gallery information
-further splits within each section occur for pricing, open/closed session and individual thumbnails in gallery -->
-<section class="split-class w3-container w3-padding-16 w3-cell-row w3-mobile">
-<div class="subs w3-row">
-    <section class="sub-article-1 w3-col w3-l5 w3-m3 w3-s2 w3-pink w3-round-xxlarge w3-card-2 w3-left w3-padding-16">
-        <div id="events"></div>
-            <h6><b>What's going on?</b></h6>
-            <div class="w3-container w3-display-container w3-margin-top">
-               
-                <div class="mondays w3-left w3-half w3-col w3-l6 w3-m2 w3-s2 w3-amber w3-round-xlarge w3-card-2 w3-mobile" style="width: 49%">
-                
-                    <p>Mondays:</p>
-                    <p>December 11th - Open</p>
-                    <p>December 18th - Open</p>
-                    <p>December 25th - Closed</p>
-                    <p>January 1st - Closed</p>
-                    <p>January 8th - Open</p>
-            
-                    </p>
-                </div>
-                    
-                <div class="tuesdays event-dates w3-row w3-right w3-half w3-col w3-l6 w3-m2 w3-amber w3-round-xlarge w3-card-2 w3-mobile" style="width: 49%">
-               
-                    <p>Tuesdays:</p>
-                    <p>December 12th - Open</p>
-                    <p>December 19th - Open</p>
-                    <p>December 26th - Closed</p>
-                    <p>January 2nd - Closed</p>
-                    <p>January 9th - Open</p>
-                
-                    </p>
-                </div>
-            </div>
-           
-            <div class="w3-container w3-display-container w3-margin">
-            <div id="pricing" class="pricing w3-row w3- w3-col w3-l5 w3-m2 w3-s10 w3-blue w3-round-xlarge w3-card-2 w3-mobile" style="width: 100%">
-               
-                    <p>Pricing:</p>
-                    <p>Block booking = £56 (7 weeks)</p>
-                    <p>Pay as you go = £8</p>
-                
-                    
-            </div>
-            </div>
-        
-        
-    </section>
 
 <!-- Images for Gallery section - Code replicated for each image -->
-<section class="sub-article-2 w3-col w3-l5 w3-m3 w3-s2 w3-teal w3-round-xxlarge w3-card-2 w3-right w3-padding-16 w3-mobile">
+<section class="gallery w3-col w3-l5 w3-m3 w3-s2 w3-teal w3-round-xxlarge w3-card-2 w3-right w3-padding-16 w3-mobile w3-center">
   <div id="gallery"></div>
       <h6><b>Let's go on an adventure!</b></h6>
-  <div class="w3-container w3-margin-bottom w3-padding-16">
+  <div class="w3-container w3-margin-bottom">
 
 <!-- Row 1 for images -->
 <!-- Note: The images in this sequence are individually added through the code below. Class / ID / containers should remain the same for each image. The only thing that should change is the image src.  -->
@@ -194,25 +133,18 @@ further splits within each section occur for pricing, open/closed session and in
 
 <!-- End closing tags for gallery section. -->
 <!-- Closure for image row 2 padding -->
-</div>              
-
-<!-- Text Content area below image gallery with button to  -->
-<div class="w3-container w3-padding">
-  <h3>More Images</h3>
-  <p>Explore our complete gallery for more exciting pictures!</p>
-  <a href="gallery.html" class="w3-button w3-yellow w3-round-large">View Larger Gallery</a>
 </div>
-            </div>
-        </div>
-    </section>
-
+<!-- Closure for gallery 'image-grid' div -->
 </div>
+<!-- Closure for 'sub-article-2' section -->
 </section>
 
-<!-- contact information section at bottom of home screen -->
-<section class="contact-article w3-container w3-padding"> 
+
+
+
+        <!-- contact information section at bottom of home screen -->
     <a id="contact-article"></a>
-    <section class="sub-article-3 w3-orange w3-text-indigo w3-round-xxlarge w3-card-2 w3-cell-row w3-padding-16">
+    <section class="sub-article-3 w3-orange w3-text-indigo w3-round-xxlarge w3-card-2 w3-cell-row w3-padding-16 w3-center" style="width:97%">
         <div>
             <h6><b>Contact Me!</b></h6>
             <p>Telephone: 07866 625164</p>
@@ -237,15 +169,7 @@ further splits within each section occur for pricing, open/closed session and in
     </section>
 </section>
 
-<script src="./assets/script/script.js"></script>
+    <script src="./assets/script/gallery.js"></script>
+    
 </body>
-
-<!-- <footer>
-
-</footer> -->
-
-<script>
-
-</script>
-
 </html>
